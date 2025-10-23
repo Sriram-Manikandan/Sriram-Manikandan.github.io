@@ -1,48 +1,157 @@
 body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.site-name {
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #ffe6d4;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.hero-text h2 {
+  font-size: 2em;
+  color: #d63031;
+}
+
+.hero-image img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.menu {
   text-align: center;
-  font-family: sans-serif;
-  background-color: #f0f0f0;
+  padding: 40px 200px;
+  background-color: #fff3e0;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+
+
+/* .menu-list li {
+    display: inline;
+    padding-left: 10%;
+  font-size: 1.1em;
+  margin: 10px 0;
+} */
+
+.order-button {
   display: flex;
-  justify-content: center;
-    
+  align-self: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
-#game-board {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 30px;
-}
-
-.mole {
-  width: 100px;
-  height: 100px;
-  background-color: grey;
-  border: none;
-  border-radius: 50%;
-  
-  
-}
-
-#rsb{
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: rgb(17, 119, 202);
-    color: white;
-    border-radius: 3px;
-    border: none;
-}
-
-.moles{
-    margin-top: 50px;
-    padding: 20px;
-    border-radius: 20px;
-    width: fit-content;
-    height: fit-content;
-    background-color: rgb(247, 247, 247);
+.reviews {
+  background-color: #ffe6d4;
+  padding: 40px 200px;
+  text-align: flex-start;
+  font-size: 30px;
 }
 
 
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 0.9em;
+}
 
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6em;
+  }
+}
+
+.pizza-image {
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
